@@ -17,23 +17,28 @@ public class MultTable {
         // 2. Print the variable doubled (ie. "__ x 2 = __") 
         // ---- BEGIN CODE ----
 
-
         // ---- END CODE ----
 
 
         // 3. Now do this for tripled, quadrupled, so on, until "__ x 10 = __"
         // ---- BEGIN CODE ----
 
-
         // ---- END CODE ----
 
 
-        // 3. Modify your code from above to print the multiplication problems from 1 through 10 using a for loop instead.
+        // 3. Modify your code from above to print the multiplication problems from 1 through 10 
+        // using a for loop instead.
+        // Use the below scaffolding as a helper: 
+        // 
+        // for (int i = __; i < __; __) {
+        //     System.out.println(__); 
+        // }
 
 
         // 4. Modify your program so that it prints a multiplication table for a different number.
 
         // 5. Modify your program so that the first number also varies from 1 to 10. You should get all the possible combinations
         //    of multiplications from 1 to 10. 
+        // (Hint: what happens if you move one for loop inside another?)
     }
 }
