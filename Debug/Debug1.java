@@ -12,8 +12,8 @@ public class Debug1 {
      * 
      */
     public static void main(String[] args) {
-        String name; 
+        String name = "Milana"; 
 
-        System.out.println("Hi! My name is " + name + " and it has " + name.length() + " characters. "); 
+        System.out.println("Hi! My name is " + name + " and it has " + name.length(); + " characters. "); 
     }
 }

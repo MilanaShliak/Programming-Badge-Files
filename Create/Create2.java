@@ -4,6 +4,10 @@ public class Create2 {
      *  Write a program that prints all integers from 1 to 100. 
      */
     public static void main(String[] args) {
+        int sum = 0;
+        for(int i = 1; i <= 100; i++){
+            sum += i;
+        }
         
     }
 }
