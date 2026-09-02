@@ -1,0 +1,31 @@
+{
+  "name": "Java",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": false,
+      "installGradle": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "-github.copilot",
+        "-github.copilot-chat"
+      ],
+      "settings": {
+        "java.compile.nullAnalysis.mode": "automatic",
+        "chat.disableAIFeatures": true,
+        "github.copilot.enable": {
+          "*": false
+        },
+        "chat.commandCenter.enabled": false,
+        "workbench.settings.enableNaturalLanguageSearch": false,
+        "editor.inlineSuggest.enabled": false
+      }
+    }
+  },
+  "postCreateCommand": "java -version"
+}
