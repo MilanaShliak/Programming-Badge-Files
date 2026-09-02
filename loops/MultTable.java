@@ -10,12 +10,14 @@ public class MultTable {
     public static void main(String[] args) {
         // 1. We will begin by choosing the first number to multiply. Create a variable with a number from 1 to 10. 
         // ---- BEGIN CODE ----
+        // int num1 = 1;
 
         // ---- END CODE ----
 
 
         // 2. Print the variable doubled (ie. "__ x 2 = __") 
         // ---- BEGIN CODE ----
+        // System.out.println(num1 + " x 2 = " + num1*2);
 
         // ---- END CODE ----
 
@@ -30,9 +32,12 @@ public class MultTable {
         // using a for loop instead.
         // Use the below scaffolding as a helper: 
         // 
-        // for (int i = __; i < __; __) {
-        //     System.out.println(__); 
-        // }
+        for(int j = 1; j <= 10; j++){
+            for (int i = 2; i <= 10; i++) {
+                System.out.println(j + " x " + i + " = " + j*i); 
+            }
+            System.out.println();
+        }
 
 
         // 4. Modify your program so that it prints a multiplication table for a different number.

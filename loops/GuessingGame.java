@@ -1,6 +1,7 @@
 package loops;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class GuessingGame {
     /*
@@ -10,11 +11,14 @@ public class GuessingGame {
         When you are finished, run your code by clicking the triangle on the top-right corner.
     */
     public static void main(String[] args) {
+        Random random = new Random();
+        int num = random.nextInt(100) + 1; ;
 
-        // while (/* add while condition */) {
+        int guess = 0;
+        while (guess != num) {
             // 1. Create a variable containing the secret number.
             // ---- BEGIN CODE ----
-
+          
 
 
             // ---- END CODE ----
@@ -27,13 +31,19 @@ public class GuessingGame {
             System.out.println("Enter guess (1-100):");
 
             String guessStr = input.nextLine();
-            int guess = Integer.parseInt(guessStr);      
+            guess = Integer.parseInt(guessStr);      
 
 
 
             // 3. Write an if statement that tells the player whether their guess is too high or too low.
             // ---- BEGIN CODE ----
-
+            if(guess > num){
+                System.out.println("Too high");
+            }else if(guess < num){
+                System.out.println("Too low");
+            }else{
+                System.out.println("You got it");
+            }
 
 
             // ---- END CODE ----
@@ -54,4 +64,5 @@ public class GuessingGame {
         // 7. Now make the variable an actual secret by randomly generating the number defined in step 1. 
         // Hint: use Java Random!
     }
+}
 }
